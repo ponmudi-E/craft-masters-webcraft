@@ -1,0 +1,179 @@
+:root {
+    --color-bgl: #f4f4f4;
+    --color-bg: #333;
+    --color-bg2: #444;
+    --color-white: #fff;
+    --transition: all 0.3s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.live{
+    color: #1bff2e;
+    background: #000000a6;}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #21076b;
+}
+
+nav {
+    background: #222;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-family: 'Gwendolyn', cursive;
+    color: yellow;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+nav {
+    background: rgba(0, 0, 0, 0.259);
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+}
+.window-scroll {
+    background: var(--color-bg2);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.38);
+}
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__menu a {
+    font-size: 0.9rem;
+    color: #fff;
+    transition: var(--transition);
+}
+
+.nav__menu a:hover {
+    color: rgb(255, 225, 0);
+}
+.nav__menu a:active {
+    color: rgb(0, 255, 0);
+}
+
+.contact {
+    background: rgb(4, 4, 86);
+    padding: 4rem 0;
+}
+
+.contact__container {
+    background: white;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 60%;
+    margin: auto;
+    border-radius: 1rem;
+    box-shadow: #1e1d1d8a;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form__name {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.contact__form input, .contact__form textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+    color: var(--color-white);
+    border: 1px solid black; 
+    border-radius: 0.5rem;
+    outline: none;
+    font-size: 1rem;
+    transition: var(--transition);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.contact__form input:focus, .contact__form textarea:focus {
+    background: var(--color-white);
+    color: black;
+}
+
+.contact__form .btn {
+    padding: 0.8rem 2rem;
+    background: rgb(0, 60, 255);
+    border: 1px solid black; 
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact__form .btn:hover {
+    background: #ffcc00;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        display: none;
+    }
+
+    #open-menu-btn, #close-menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav__container {
+        justify-content: space-between;
+    }
+
+    .contact__container {
+        width: 90%;
+        background: rgb(4, 4, 86);
+    }
+
+    .form__name {
+        flex-direction: column;
+    }
+
+    .contact__form input[type="text"] {
+        width: 100%;
+    }
+}

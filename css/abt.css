@@ -1,0 +1,83 @@
+.about {
+    padding: 6rem 0;
+}
+
+.about header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about header h2 {
+    font-size: 2.5rem;
+    color: var(--color-white);
+}
+
+.about header p {
+    color: var(--color-light);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.about__left, .about__right {
+    color: var(--color-white);
+}
+
+.about__left h3, .about__right h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about__right img {
+    max-width: 80%;
+    margin-top: 0%;
+    height: auto;
+    display: block;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.about__team {
+    margin-top: 6rem;
+}
+
+.about__team h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--color-white);
+}
+
+.team__member {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.team__member img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.member__info {
+    color: var(--color-white);
+}
+
+.member__info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.member__info p {
+    line-height: 1.6;
+}
